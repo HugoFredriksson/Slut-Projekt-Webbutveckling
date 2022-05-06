@@ -1,53 +1,57 @@
-header {  
-    background:rgb(255, 255, 255); /* Bakgrundsfärgen på headern ändras färg */
+body {
+    margin: 0;
 }
 
-li > a {  /* a tag i li tag */
-    color: rgb(0, 0, 0); /* svart färg */
-    font-size: 30px; /* text storlek blir ändrad */
-}
-
-nav {   
-    list-style: none; /* Tar bort punkter som uppstår naturligt vid en lista */
-    text-decoration: none; /* tar bort dekoration vid texten */
-}
-
-nav ul { 
+.container {  
+    width: 100%;  
     margin: 0; 
-    list-style: none; 
+    font-size: 80px;
 }
 
-li:hover{
-    background-color: rgb(145, 145, 145);
-}
-
-.logo {
-    float: left; 
-    padding-left: 5px;
-}
-
-nav li {  
-    display: inline-block;
-    right: 10px;
-    margin-left: 30px; 
-    text-align: center; 
-    padding: 8px;
+header::after {  /* Clearfix, utan att skriva detta så försvinner min header/nav till 0px */
+    content: '';  
+    display: table;   
+    clear: both;
 }
 
 .namn { /* Namn på class */
-    background-color: rgb(169, 169, 169); /* Bakgrundsfärg */
-    box-shadow: 10px 10px 60px 10px; /* Skugga */
+    position: fixed; /* Position på sida */
+    left: 10px;
+    bottom: 15px; /* Botten på sidan */
+    padding-left: 10px; /* Kudde på vänster sida */
+    padding-right: 10px; /* Kudde på höger sida */
 }
-.text1 {
-    background-color: rgb(169, 169, 169);
-    margin-left: 20px;
+.grid-container { /* Namn på class*/
+    display: grid; /* Visa det hära som en grid */
+    grid-template-areas: /* Positioner för class i grid */
+      'Text1 Text1 Text2 Text2 Text3 Text3'
+      'Text1 Text1 Text2 Text2 Text3 Text3'
+      'Text4 Text4 Text2 Text2 Text3 Text3'
+      'Text4 Text4 Text2 Text2 Text3 Text3';
+    grid-gap: 10px; /* Mellan rum per cell */
+    background-color: rgb(80, 74, 74); /* Bakgrundsfärg */
+    padding-top: 10px;
 }
-.text2 {
-    position: fixed;
-    top: 200px;
-    text-align: center;
-    background-color: rgb(169, 169, 169);
-    margin-left: 20px;
-    column-rule-style: solid;
-    width: 345px;
+
+.grid-container > div { /* Div inuti class grid-container */
+    background-color: white; /* Bakgrundsfärg */
+}
+
+.sak3 { /* Namn på class */ 
+    grid-area: Text1; /* Namn i grid-template-areas */ 
+    max-width: 65vh;
+    height: 45vh;
+}
+
+.sak4 { /* Namn på class */
+    grid-area: Text2; /* Namn i grid-template-areas */
+}
+
+.sak5 { /* Namn på class */
+    grid-area: Text3; /* Namn i grid-template-areas */ 
+}
+
+.sak6 {
+    grid-area: Text4;
+    max-width: 65vh;
 }
