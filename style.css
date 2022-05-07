@@ -1,57 +1,67 @@
 body {
-    background-color: rgb(32, 30, 30); /* sätter bakgrunds färgen */
+    background: rgb(80, 74, 74);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
-
-header {  
-    background:rgb(255, 255, 255); /* Bakgrundsfärgen på headern ändras färg */
-}
-
-li > a {  /* a tag i li tag */
-    color: rgb(0, 0, 0); /* svart färg */
-    font-size: 30px; /* text storlek blir ändrad */
-}
-
-nav {   
-    list-style: none; /* Tar bort punkter som uppstår naturligt vid en lista */
-    text-decoration: none; /* tar bort dekoration vid texten */
-}
-
-nav ul { 
-    margin: 0; 
-    list-style: none; 
-}
-
-li:hover{
-    background-color: rgb(145, 145, 145);
-}
-
-.logo {
-    float: left; 
-    padding-left: 5px;
-}
-
-nav li {  
-    display: inline-block;
-    right: 10px;
-    margin-left: 30px; 
-    text-align: center; 
-    padding: 8px;
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .namn { /* Namn på class */
+    position: fixed; /* Position på sida */
+    left: 10px;
+    bottom: 15px; /* Botten på sidan */
+    padding-left: 10px; /* Kudde på vänster sida */
+    padding-right: 10px; /* Kudde på höger sida */
     background-color: rgb(169, 169, 169); /* Bakgrundsfärg */
     box-shadow: 10px 10px 60px 10px; /* Skugga */
 }
-.text1 {
-    background-color: rgb(169, 169, 169);
-    margin-left: 20px;
+
+nav {
+    background: #fff;
 }
-.text2 {
-    position: fixed;
-    top: 200px;
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative; /* Position kommer att vara relativ till min ul i min nav */
+    text-align: left;
+}
+.nav-head {
+    font-size: 25px;
     text-align: center;
-    background-color: rgb(169, 169, 169);
-    margin-left: 20px;
-    column-rule-style: solid;
-    width: 345px;
+}
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    display: block;
+    padding: .75em 1.75em;
+}
+
+nav li:hover a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #444;
+}
+
+.menu-sub {
+    position: absolute;
+    background: #444;
+    width: 100%;
+    display: none;
+}
+
+nav li:hover .menu-sub { /* När man *hoverar* över nav bar itemet så visas den */
+    display: block;
+}
+
+.menu-sub li {
+    display: block;
 }

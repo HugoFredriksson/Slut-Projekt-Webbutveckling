@@ -1,26 +1,3 @@
-body {
-    margin: 0;
-}
-
-.container {  
-    width: 100%;  
-    margin: 0; 
-    font-size: 80px;
-}
-
-header::after {  /* Clearfix, utan att skriva detta så försvinner min header/nav till 0px */
-    content: '';  
-    display: table;   
-    clear: both;
-}
-
-.namn { /* Namn på class */
-    position: fixed; /* Position på sida */
-    left: 10px;
-    bottom: 15px; /* Botten på sidan */
-    padding-left: 10px; /* Kudde på vänster sida */
-    padding-right: 10px; /* Kudde på höger sida */
-}
 .grid-container { /* Namn på class*/
     display: grid; /* Visa det hära som en grid */
     grid-template-areas: /* Positioner för class i grid */
@@ -53,4 +30,3 @@ header::after {  /* Clearfix, utan att skriva detta så försvinner min header/n
     grid-area: Text4;
     font-size: 45px;
 }
-
