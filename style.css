@@ -1,5 +1,5 @@
 body {
-    background: rgb(80, 74, 74);
+    background: rgb(105, 105, 105);
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 nav {
-    background: #fff;
+    background: rgb(136, 136, 136);
 }
 nav ul {
     margin: 0;
@@ -37,7 +37,7 @@ nav li {
 }
 
 nav a {
-    color: #444;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     display: block;
     padding: .75em 1.75em;
@@ -53,8 +53,8 @@ nav a:hover {
 
 .menu-sub {
     position: absolute;
-    background: #444;
-    width: 100%;
+    background: rgb(42, 87, 153);
+    width: 40%;
     display: none;
 }
 

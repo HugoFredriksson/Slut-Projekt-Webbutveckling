@@ -1,47 +1,50 @@
-.namn { /* Namn på class */
-    position: fixed; /* Position på sida */
+.namn { 
+    position: fixed; 
     left: 10px;
-    bottom: 15px; /* Botten på sidan */
-    padding-left: 10px; /* Kudde på vänster sida */
-    padding-right: 10px; /* Kudde på höger sida */
+    bottom: 15px; 
+    padding-left: 10px; 
+    padding-right: 10px; 
 }
-.grid-container { /* Namn på class*/
-    display: grid; /* Visa det hära som en grid */
-    grid-template-areas: /* Positioner för class i grid */
+.grid-container {
+    display: grid; 
+    grid-template-areas: 
       'Text1 Text1 Text2 Text2 Text3 Text3'
       'Text1 Text1 Text2 Text2 Text3 Text3'
       'Text4 Text4 Text2 Text2 Text3 Text3'
       'Text4 Text4 Text2 Text2 Text3 Text3';
-    grid-gap: 10px; /* Mellan rum per cell */
-    background-color: rgb(80, 74, 74); /* Bakgrundsfärg */
+    grid-gap: 10px; 
+    background-color: rgb(80, 74, 74);
     padding-top: 10px;
 }
 
-.grid-container > div { /* Div inuti class grid-container */
-    background-color: white; /* Bakgrundsfärg */
+.grid-container > div { 
+    background-color: white; 
 }
 
-.sak3 { /* Namn på class */ 
-    grid-area: Text1; /* Namn i grid-template-areas */ 
+.sak3 { 
+    grid-area: Text1; 
     max-width: 65vh;
     height: 45vh;
+    text-align: center;
 }
 
-.sak4 { /* Namn på class */
-    grid-area: Text2; /* Namn i grid-template-areas */
+.sak4 {
+    grid-area: Text2; 
+    max-width: 65vh;
 }
 
-.sak5 { /* Namn på class */
-    grid-area: Text3; /* Namn i grid-template-areas */ 
+.sak5 { 
+    grid-area: Text3;
+    text-align: center;
 }
 
 .sak6 {
     grid-area: Text4;
     max-width: 65vh;
 }
-.namn { /* Namn på class */
-    background-color: rgb(169, 169, 169); /* Bakgrundsfärg */
-    box-shadow: 10px 10px 60px 10px; /* Skugga */
+.namn {
+    background-color: rgb(169, 169, 169);
+    box-shadow: 10px 10px 60px 10px; 
 }
 .text1 {
     background-color: rgb(169, 169, 169);
