@@ -5,7 +5,6 @@ body {
 }
 .container {
     max-width: 1000px;
-    margin: 0 auto;
 }
 
 .namn { /* Namn på class */
@@ -29,7 +28,6 @@ nav ul {
     text-align: left;
 }
 .nav-head {
-    font-size: 25px;
     text-align: center;
 }
 nav li {
@@ -53,7 +51,7 @@ nav a:hover {
 
 .menu-sub {
     position: absolute;
-    background: rgb(42, 87, 153);
+    background: rgb(110, 110, 110);
     width: 40%;
     display: none;
 }

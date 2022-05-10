@@ -1,0 +1,50 @@
+.grid-container {
+    display: grid; 
+    grid-template-areas: 
+      'Text1 Text1 Text2 Text2 Text3 Text3'
+      'Text1 Text1 Text2 Text2 Text3 Text3'
+      'Text1 Text1 Text4 Text4 Text3 Text3'
+      'Text1 Text1 Text4 Text4 Text3 Text3';
+    grid-gap: 10px; 
+    background-color: rgb(80, 74, 74);
+    padding-top: 10px;
+}
+
+.grid-container > div { 
+    background-color: white; 
+}
+
+.sak3 { 
+    grid-area: Text1; 
+    background-image: url(graphic.png);
+    max-width: 65vh;
+    height: 100%;
+    text-align: center;  
+}
+
+.sak4 {
+    grid-area: Text2; 
+    max-width: 75%;
+    text-align: center;
+}
+
+.sak5 { 
+    grid-area: Text3;
+    text-align: center;  
+}
+
+.sak6 {
+    display: grid;
+    grid-area: Text4;
+    max-width: 65%;
+    align-items: center;
+}
+td, th {
+    border: 1px solid;
+    text-align: center;
+    padding:20px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #666666;
+  }
