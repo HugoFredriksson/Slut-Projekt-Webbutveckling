@@ -20,6 +20,7 @@
 
 .sak4 {
     grid-area: Text2; 
+    text-align: center;
 }
 
 .sak5 { 
@@ -28,4 +29,5 @@
 
 .sak6 {
     grid-area: Text4;
+    text-align: center;
 }
