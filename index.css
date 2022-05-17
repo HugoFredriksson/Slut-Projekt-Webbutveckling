@@ -10,6 +10,10 @@
     padding-top: 10px;
 }
 
+dt{
+    font-size: large;
+}
+
 .grid-container > div { /* Div inuti class grid-container */
     background-color: white; /* Bakgrundsfärg */
 }
@@ -20,6 +24,7 @@
 
 .sak4 { /* Namn på class */
     grid-area: Text2; /* Namn i grid-template-areas */
+    font-size: large;
 }
 
 .sak5 { /* Namn på class */
@@ -30,3 +35,4 @@
     grid-area: Text4;
     font-size: 45px;
 }
+
