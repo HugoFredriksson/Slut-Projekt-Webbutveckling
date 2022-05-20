@@ -8,6 +8,7 @@
     grid-gap: 10px; 
     background-color: rgb(80, 74, 74);
     padding-top: 10px;
+    border-radius: 10%;
 }
 
 .grid-container > div { 

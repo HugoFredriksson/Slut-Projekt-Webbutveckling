@@ -1,27 +1,27 @@
 body {
-    background: rgb(105, 105, 105);
+    background: hsl(180, 75%, 24%);
     margin: 0;
     font-family:  'Oswald', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap'); /* Importerar en extern font */
 
 .container {
     max-width: 100vh;
 }
 
-.namn { /* Namn på class */
-    position: fixed; /* Position på sida */
+.namn { 
+    position: fixed;
     left: 10px;
-    bottom: 15px; /* Botten på sidan */
-    padding-left: 10px; /* Kudde på vänster sida */
-    padding-right: 10px; /* Kudde på höger sida */
-    background-color: rgb(169, 169, 169); /* Bakgrundsfärg */
-    box-shadow: 10px 10px 60px 10px; /* Skugga */
+    bottom: 15px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(169, 169, 169);
+    box-shadow: 10px 10px 60px 10px;
 }
 
 nav {
-    background: rgb(136, 136, 136);
+    background: hsl(180, 75%, 30%);
 }
 nav ul {
     margin: 0;
@@ -38,7 +38,7 @@ nav li {
 }
 
 nav a {
-    color: rgb(0, 0, 0);
+    color: hsl(0, 0%, 100%);
     text-decoration: none;
     display: block;
     padding: .75em 1.75em;
@@ -54,8 +54,8 @@ nav a:hover {
 
 .menu-sub {
     position: absolute;
-    background: rgb(110, 110, 110);
-    width: 40%;
+    background: hsl(180, 50%, 50%);
+    width: 12%;
     display: none;
 }
 
