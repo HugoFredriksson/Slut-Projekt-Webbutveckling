@@ -1,8 +1,11 @@
 body {
     background: rgb(105, 105, 105);
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family:  'Oswald', sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
 .container {
     max-width: 100vh;
 }
