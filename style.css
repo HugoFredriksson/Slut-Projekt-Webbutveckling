@@ -83,3 +83,10 @@ nav li:hover .menu-sub { /* När man *hoverar* över nav bar itemet så visas de
 .menu-sub li {
     display: block;
 }
+
+a:hover {
+    background-color: #27b8bd;
+    -webkit-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
