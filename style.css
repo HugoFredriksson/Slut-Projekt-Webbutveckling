@@ -6,6 +6,11 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap'); /* Importerar en extern font */
 
+@font-face {
+    font-family:  'Oswald', sans-serif;
+    src: url("font/Oswald_sans-serif.ttf")
+}
+
 .container {
     max-width: 100vh;
 }
@@ -18,6 +23,22 @@ body {
     padding-right: 10px;
     background-color: rgb(169, 169, 169);
     box-shadow: 10px 10px 60px 10px;
+}
+
+a:link {
+    color: rgb(117, 117, 117);
+}
+a:visited {
+    color:hsl(0, 0%, 100%)
+}
+a:focus {
+    color:hsl(180, 13%, 46%)
+}
+a:hover {
+    color: #444;
+}
+a:active {
+    color: #fff;
 }
 
 nav {
