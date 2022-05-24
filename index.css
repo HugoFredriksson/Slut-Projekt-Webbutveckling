@@ -14,25 +14,45 @@ dt{
     font-size: large;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 10px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
 .grid-container > div { /* Div inuti class grid-container */
     background-color: white; /* Bakgrundsfärg */
 }
 
 .sak3 { /* Namn på class */ 
+    background-image: url(computerman.png);
+    background-repeat: no-repeat;
     grid-area: Text1; /* Namn i grid-template-areas */ 
+    width: 63vh;
+    height: 60vh;
 }
 
 .sak4 { /* Namn på class */
     grid-area: Text2; /* Namn i grid-template-areas */
     font-size: large;
+    text-align: center;
+    padding-top: 100px;
+    width: 450px;
+    height: 450px;
 }
 
 .sak5 { /* Namn på class */
     grid-area: Text3; /* Namn i grid-template-areas */ 
+    background-image: url(potato.png);
 }
 
 .sak6 {
-    grid-area: Text4;
+    
+    grid-area: Text4; /* Namn i grid-template-areas */
     font-size: 45px;
 }
 

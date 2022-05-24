@@ -6,10 +6,6 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap'); /* Importerar en extern font */
 
-@font-face {
-    font-family:  'Oswald', sans-serif;
-    src: url("font/Oswald_sans-serif.ttf")
-}
 
 .container {
     max-width: 100vh;
