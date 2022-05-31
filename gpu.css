@@ -14,6 +14,10 @@
     background-color: white; 
 }
 
+.graphic {
+    width: max-content;
+}
+
 .sak3 { 
     grid-area: Text1; 
     background-image: url(graphic.png);

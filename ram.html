@@ -11,8 +11,8 @@
 <body>
     <nav>
         <div class="container">
-            <ul class="menu-main">
-                <li><a class="nav-head" href="ram.html">RAM</a></li>
+            <ol>
+                <li><a class="nav-head" href="gpu.html">GPU</a></li>
                 <li><a href="">Sidor</a>
                     <div class="menu-sub">
                         <ul>
@@ -24,15 +24,14 @@
                         </ul>
                     </div>
                 </li>
-            </ul>
+            </ol>
         </div>
     </nav>
-
-    <div class="grid-container">
+    <div class="grid-container"> <!--Innehåll för grid-->
         <div class="sak3">
-        
             <img src="ram.png" class="ram" alt="bild på ram">
         </div>
+
         <div class="sak4">
         <h1>Ram Minne</h1>
         <p>RAM-minnet (Random Access Memory) är en av de väsentliga delarna i en dator. Om inget RAM-minne är installerat kommer datorn att vägra starta. Det som skiljer mellan olika RAM-minnen är bland annat tekniken, hastigheten och storleken.
@@ -42,31 +41,58 @@
             Detta kapitel behandlar RAM-minnets funktion och egenskaper. Nästa kapitel tar sedan vid och går in på de olika varianterna.
         </p>
         </div>
+
         <div class="sak5">
-            <img src="potatoram.png" width="520" alt="potatis ramminne">
+            <img src="potatoram.png" class="potat" alt="potatis ramminne">
         </div>
-        <script src="ram.js"></script>
+
         <div class="sak6">
-            <h2>Quiz</h2>
-            <p>Ditt namn</p>
-            <form action="/action_page.php">
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <input type="hidden" id="custId" name="custId" value="3487">
-              </form>
-            <p>Fråga 1. Vad är 2 + 3</p>
-            <input type="radio" name="question1" id="correct1">5<br>
-            <input type="radio" name="question1" >20<br>
-            <input type="radio" name="question1" >13<br>
-            <input type="radio" name="question1" >6<br>
-
-            <p>Fråga 2. Vem uppfann ram minnet?</p>
-            <input type="radio" name="question2" >John Keats<br>
-            <input type="radio" name="question2" >Edgar Allan Poe<br>
-            <input type="radio" name="question2" id="correct2">Robert Heath Dennard<br>
-            <input type="radio" name="question3" >Salamon Ahlrot<br>
-
-            <input class="input" type="submit" name="Submit" value="Skicka In" onClick="result()">
+            <main>
+                <h2>Männ i skor</h2>
+                <p>
+                    Är människor bara i skor eller vad????
+                </p>
+                <br>
+                <p>Bara svara på frågorna nedan!</p>
+                <form action="index.html" method="POST"> <!--Infon skickas-->
+    
+                    <div>
+                        <label for="Dator">Gillar du dator?</label>
+                        <input type="checkbox" checked id="Dator" name="Dator">
+                    </div>
+    
+                    <div>
+                        <label for="redo">Är du redo?</label>
+                        <input type="checkbox" id="redo" name="redo">
+                   </div>
+    
+                    <div>
+                        <label for="password">Lösenord?</label>
+                        <input type="password" required id="password" name="password">
+                    </div>
+    
+                        <p>ARRHRHRH</p>
+    
+                        <label for="tired">Trött</label>
+                        <input type="radio" id="tired" name="feeling">
+        
+        
+                        <label for="happy">tjuv</label>
+                        <input type="radio" id="happy" name="feeling">
+        
+        
+                        <label for="IS">Lånare av simon</label>
+                        <input type="radio" id="IS" name="IS">
+    
+                    <div>
+                        <label for="color">Vilken färg, VÄLJ!!!</label>
+                        <input type="color" id="color" name="color">
+                    </div>
+    
+                    <input type="submit" value="Jag är redo att acceptera mitt öde">
+    
+                </form>
+            </main>
         </div>
     </div>
 

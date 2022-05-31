@@ -15,6 +15,10 @@
     background-color: white; 
 }
 
+.potat {
+    width: 520px;
+}
+
 .sak3 { 
     grid-area: Text1; 
 }

@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap'); /* Importerar en extern font */
+
 body {
     background: hsl(180, 75%, 24%);
     margin: 0;
     font-family:  'Oswald', sans-serif;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap'); /* Importerar en extern font */
-
 
 .container {
     max-width: 100vh;
@@ -86,7 +85,5 @@ nav li:hover .menu-sub { /* När man *hoverar* över nav bar itemet så visas de
 
 a:hover {
     background-color: #27b8bd;
-    -webkit-transition: background-color 400ms linear;
-    -ms-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
 }
